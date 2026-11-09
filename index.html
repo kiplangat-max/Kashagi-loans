@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kashagi Loans — loan application information for customers in Zimbabwe.">
+  <title>Kashagi Loans | Apply for a Loan</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/">KASHAGI <span>LOANS</span></a>
+    <a class="toplink" href="#apply">Apply now</a>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="eyebrow">LOAN APPLICATIONS · ZIMBABWE</div>
+      <h1>Financial support,<br><em>made simpler.</em></h1>
+      <p class="intro">Submit an application for a loan between <strong>USD 10 and USD 1,000</strong>. Our team will review your details and contact you about available terms.</p>
+      <a class="primary" href="#apply">Start an application <span>→</span></a>
+      <p class="fine">Submitting an application does not guarantee approval.</p>
+    </section>
+
+    <section class="details">
+      <article><div class="number">01</div><h3>Apply online</h3><p>Complete the application form with accurate contact details.</p></article>
+      <article><div class="number">02</div><h3>Review</h3><p>Your request is reviewed by the Kashagi Loans team.</p></article>
+      <article><div class="number">03</div><h3>Discuss terms</h3><p>Interest rates and repayment terms are discussed directly before any agreement.</p></article>
+    </section>
+
+    <section class="form-section" id="apply">
+      <div class="form-heading">
+        <div class="eyebrow">GET STARTED</div>
+        <h2>Loan application</h2>
+        <p>For Zimbabwe residents only. Fields marked * are required.</p>
+      </div>
+      <form id="application-form">
+        <div class="field"><label for="full_name">Full name *</label><input id="full_name" name="full_name" autocomplete="name" required maxlength="100" placeholder="Your full name"></div>
+        <div class="field"><label for="phone">Mobile number *</label><input id="phone" name="phone" type="tel" autocomplete="tel" required maxlength="30" placeholder="+263 ..."></div>
+        <div class="field"><label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" maxlength="150" placeholder="you@example.com"></div>
+        <div class="field"><label for="country">Country *</label><select id="country" name="country" required><option value="Zimbabwe" selected>Zimbabwe</option></select></div>
+        <div class="field"><label for="amount">Loan amount (USD) *</label><input id="amount" name="amount" type="number" min="10" max="1000" step="1" required placeholder="e.g. 200"></div>
+        <div class="field"><label for="purpose">What is the loan for? *</label><textarea id="purpose" name="purpose" rows="4" maxlength="500" required placeholder="Briefly describe your reason for applying"></textarea></div>
+        <div class="hp" aria-hidden="true"><label>Leave this field empty<input name="website" tabindex="-1" autocomplete="off"></label></div>
+        <label class="consent"><input type="checkbox" required> <span>I confirm that the information I provided is accurate and agree that Kashagi Loans may contact me about this application.</span></label>
+        <button class="primary submit" type="submit">Submit application <span>→</span></button>
+        <div id="form-message" role="status" aria-live="polite"></div>
+      </form>
+      <p class="security-note">Never enter or share your EcoCash PIN, banking password, or one-time verification code. Kashagi Loans does not need these to review an application.</p>
+    </section>
+
+    <section class="contact">
+      <div><div class="eyebrow">QUESTIONS?</div><h2>Talk to our team.</h2><p>Contact Kashagi Loans through our Facebook page for enquiries about interest rates and repayment terms.</p></div>
+      <a class="secondary" href="https://www.facebook.com/profile.php?id=61595713636897" target="_blank" rel="noopener noreferrer">Visit our Facebook page ↗</a>
+    </section>
+  </main>
+  <footer><span>© <span id="year"></span> Kashagi Loans</span><a href="/admin.html">Staff sign in</a></footer>
+  <script src="/app.js" defer></script>
+</body>
+</html>
